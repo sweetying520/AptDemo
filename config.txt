@@ -1,0 +1,2 @@
+classPath=com.dream.aptdemo.Business2
+methodName=doBusiness2Function
