@@ -33,9 +33,9 @@ public class Client {
             Properties config= new Properties();
             config.load(new FileInputStream(springConfigFile));
             //获取类路径
-            String classPath = (String) config.get("classPath");
+            String classPath = (String) config.get("class");
             //获取方法名
-            String methodName = (String) config.get("methodName");
+            String methodName = (String) config.get("method");
 
             //反射创建实际例子并调用方法
             Class aClass = Class.forName(classPath);

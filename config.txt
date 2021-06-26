@@ -1,2 +1,2 @@
-classPath=com.dream.aptdemo.Business2
-methodName=doBusiness2Function
+class=com.dream.aptdemo.Business2
+method=doBusiness2Function
