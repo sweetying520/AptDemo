@@ -36,53 +36,6 @@ public class MyBindingProcessor extends AbstractProcessor {
 
     @Override
     public boolean process(Set<? extends TypeElement> set, RoundEnvironment roundEnvironment) {
-
-          //生成 Java 代码
-//        if (set == null || set.isEmpty()) {
-//            return false;
-//        }
-//
-//        Set<? extends Element> rootElements = roundEnvironment.getElementsAnnotatedWith(MyBindView.class);
-//        StringBuilder annotations = new StringBuilder();
-//        if (rootElements != null && !rootElements.isEmpty()) {
-//            for (Element element : rootElements) {
-//                annotations.append(element.getSimpleName() + ",");
-//            }
-//        }
-//
-//        String s = annotations.toString();
-//
-//        // 构建主函数
-//        MethodSpec main = MethodSpec.methodBuilder("main")
-//                .addModifiers(Modifier.PUBLIC, Modifier.STATIC) // 指定方法修饰符
-//                .returns(void.class) // 指定返回类型
-//                .addParameter(String[].class, "args") // 添加参数
-//                .addStatement("$T.out.println($S)", System.class, s) // 构建方法体
-//                .build();
-//
-//        // 构建类
-//        TypeSpec helloWorld = TypeSpec.classBuilder("HelloWorld")
-//                .addModifiers(Modifier.PUBLIC, Modifier.FINAL) // 指定类修饰符
-//                .addMethod(main) // 添加方法
-//                .build();
-//
-//        // 指定包路径，构建文件体
-//        JavaFile javaFile = JavaFile.builder("com.example.helloworld", helloWorld).build();
-//        try {
-//            // 创建文件
-//            javaFile.writeTo(filer);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//
-//        return true;
-
-
-
-
-
-
-
         //获取全部的类 仿 ButterKnife
         for (Element element : roundEnvironment.getRootElements()) {
             //获取类的包名
