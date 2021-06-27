@@ -10,7 +10,6 @@ import com.dream.apt_annotation.MyBindView;
 import com.dream.apt_api.MyButterKnife;
 
 
-//@TestAnnotation(ip = "10.0.34.256",name = "erdai",port = 8888)
 @SuppressLint("NonConstantResourceId,SetTextI18n")
 public class MainActivity extends AppCompatActivity {
 
@@ -25,11 +24,5 @@ public class MainActivity extends AppCompatActivity {
 
         MyButterKnife.bind(this);
         mTextView.setText("erdai666");
-
-
-
-
-//        TestAnnotation annotation = MainActivity.class.getAnnotation(TestAnnotation.class);
-//        Log.d("MainActivity", "onCreate: " + annotation.ip() + "  " + annotation.name() + "  " + annotation.port());
     }
 }
