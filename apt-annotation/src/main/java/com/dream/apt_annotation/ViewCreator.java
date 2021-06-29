@@ -8,16 +8,16 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * function: Apt 注解
+ * function: 生成 View 注解
  *
  * @author zy
- * @since 2021/6/27
+ * @since 2021/6/29
  */
+
 @Inherited
 @Documented
 @Retention(RetentionPolicy.CLASS)
-@Target({ElementType.TYPE,ElementType.METHOD})
-public @interface AptAnnotation {
+@Target(ElementType.TYPE)
+public @interface ViewCreator {
 
-    String desc() default "";
 }
